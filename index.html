@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birth Date Calendar Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Birth Date Calendar Converter</h1>
+    <p>Enter your birth date to see it in Gregorian, Hijri, and Hebrew calendars.</p>
+
+    <form onsubmit="calculateResults(event)">
+      <label for="birthdate">Your birth date:</label>
+      <input type="date" id="birthdate" required>
+      <button type="submit">Convert</button>
+    </form>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
